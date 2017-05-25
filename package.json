@@ -1,0 +1,27 @@
+{
+  "name": "node-github-graphql",
+  "description": "GitHub graphql HTTP wrapper",
+  "version": "0.1.0",
+  "author": "Wilson Ching",
+  "bugs": {
+    "url": "https://github.com/wilsonchingg/node-github-graphql/issues"
+  },
+  "contributors": [
+    "Wilson Ching"
+  ],
+  "dependencies": {
+    "https-proxy-agent": "^1.0.0",
+    "request": "^2.81.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wilsonchingg/node-github-graphqlt"
+  }
+}
