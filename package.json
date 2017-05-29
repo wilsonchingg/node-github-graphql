@@ -26,8 +26,6 @@
       "url": "http://www.opensource.org/licenses/mit-license.php"
     }
   ],
-  "main": "lib",
-  "types": "lib/main.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/wilsonchingg/node-github-graphqlt"
