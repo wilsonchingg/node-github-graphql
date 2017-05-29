@@ -5,7 +5,7 @@ A GitHub GraphQL HTTP wrapper
 ### Installation
 
 ```
-npm install https://github.com/fergiemcdowall/search-index.git
+npm install https://github.com/wilsonchingg/node-github-graphql.git
 ```
 
 ### Example
