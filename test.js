@@ -43,7 +43,7 @@ test('post /apps with params', t => {
   .post('/graphql')
   .reply(201, apiResponse)
   t.pass()
-  github.query(apiQuery, () => {
+  github.query(apiQuery, null, () => {
     t.pass()
     api.done()
   })
