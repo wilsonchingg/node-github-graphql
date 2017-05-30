@@ -11,7 +11,7 @@ npm install node-github-graphql --save
 ### Example
 
 ```javascript
-var GithubGraphQLApi = require('github-graphql');
+var GithubGraphQLApi = require('node-github-graphql');
 var github = new GithubGraphQLApi({
 	Promise: require('bluebird'),
 	token: process.env.GITHUB_API_TOKEN,
