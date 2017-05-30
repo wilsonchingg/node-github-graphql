@@ -1,2 +1,4 @@
 .npmignore
+.nyc_output
+coverage
 test.js
