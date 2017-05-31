@@ -2,6 +2,16 @@
 
 A GitHub GraphQL HTTP wrapper
 
+### Table of contents
+
+- [Node-Github-GraphQL](#node-github-graphql)
+  * [Table of contents](#table-of-contents)
+  * [Installation](#installation)
+  * [Basic Example](#basic-example)
+  * [Advanced Example](#advanced-example)
+  * [API Reference](#api-reference)
+  * [LICENSE](#license)
+
 ### Installation
 
 ```
@@ -73,6 +83,45 @@ fragment handleCommits on Commit {
   console.log(JSON.stringify(res, null, 2))
 }).catch((err) => { console.log(err) })
 ```
+
+### API Reference
+
+#### new GithubGraphQLApi(options) ####
+
+**- options**
+
+Type: objects
+
+The accepted keys are as below:
+
+
+| Key             | Value                               |
+|-----------------|-------------------------------------|
+| Promise/promise | The promise object                  |
+| token           | Github API key(**Mandatory**)       |
+| debug           | To turn on debug log (boolean)      |
+| userAgent       | User-Agent if specified             |
+| url             | Alternative url to send the request |
+
+#### github.request(query, variables, callback) ####
+
+**- query**
+
+Type: string
+
+GraphQL query
+
+**- variables (optional)**
+
+Type: object
+
+Dynamic arguments to be passed inside the query string. See http://graphql.org/learn/queries/#variables
+
+**- callback (optional)**
+
+Type: function (string response, string error)
+
+If callback is specified, it will be used instead of promises.
 
 ### LICENSE
 
