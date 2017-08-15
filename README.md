@@ -102,7 +102,7 @@ The accepted keys are as below:
 
 Type: string
 
-GraphQL query
+This variable can either be a GraphQL query (as shown on advance example), or a file path that contains the query
 
 **- variables (optional)**
 

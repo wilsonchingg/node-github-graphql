@@ -1,7 +1,7 @@
 {
   "name": "node-github-graphql",
   "description": "GitHub graphql HTTP wrapper",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "author": "Wilson Ching",
   "bugs": {
     "url": "https://github.com/wilsonchingg/node-github-graphql/issues"
