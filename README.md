@@ -47,7 +47,7 @@ var github = new GithubGraphQLApi({
   debug: true
 })
 github.query(`
-query ($number_of_repos: Int!) {
+query ($number_of_commits: Int!) {
   repository(name: "node-github-graphql", owner: "wilsonchingg") {
     ref(qualifiedName: "master") {
       target {
@@ -59,25 +59,18 @@ query ($number_of_repos: Int!) {
 
 fragment handleCommits on Commit {
   id
-  history(first: $number_of_repos) {
-    pageInfo {
-      hasNextPage
-    }
+  history(first: $number_of_commits) {
     edges {
       node {
-        messageHeadline
-        oid
-        message
         author {
           name
-          email
           date
         }
       }
     }
   }
 }`, {
-  'number_of_repos': 3
+  'number_of_commits': 3
 }
 ).then(function (res) {
   console.log(JSON.stringify(res, null, 2))
