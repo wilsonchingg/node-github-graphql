@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "bluebird": "^3.5.0",
-    "https-proxy-agent": "^1.0.0",
+    "https-proxy-agent": "^2.2.1",
     "request": "^2.81.0",
     "winston": "^2.3.1"
   },
